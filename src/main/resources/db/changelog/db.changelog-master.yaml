@@ -7,3 +7,6 @@ databaseChangeLog:
       file: db/changelog/changeset/add-new-colum-laptop.yaml
   - include:
       file: db/changelog/changeset/rename-price-column-laptop.yaml
+  - include:
+      file: db/changelog/changeset/add-value-laptop.yaml
+

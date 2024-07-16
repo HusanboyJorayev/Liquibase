@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-value-laptop
+      author: Husanboy
+      changes:
+        - insert:
+            tableName: laptop
+            columns:
+              - column:
+                  name: laptop_price
+                  value: 23.45
+              - column:
+                  name: model
+                  value: uz
+              - column:
+                  name: colour
+                  value: red
