@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - databaseChangeLog:
+  - changeSet:
+      id: create-laptop-table
+      author: Husanboy
+      changes:
+        - createTable:
+            tableName: laptop
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: price
+                  type: double
+                  constraints:
+                    nullable: false
+              - column:
+                  name: model
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

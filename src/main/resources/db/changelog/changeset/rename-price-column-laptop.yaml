@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: rename-price-column-laptop
+      author: Husanboy
+      changes:
+        - renameColumn:
+            tableName: laptop
+            oldColumnName: price
+            newColumnName: laptop_price
+
+
+

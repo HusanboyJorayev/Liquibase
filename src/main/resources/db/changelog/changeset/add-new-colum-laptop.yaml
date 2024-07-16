@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-new-column-laptop
+      author: Husanboy
+      changes:
+        - addColumn:
+            tableName: laptop
+            columns:
+              - column:
+                  name: colour
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
