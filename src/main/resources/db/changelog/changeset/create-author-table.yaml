@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-author-table
+      author: Husanboy
+      changes:
+        - createTable:
+            tableName: author
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: firstname
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: lastname
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
